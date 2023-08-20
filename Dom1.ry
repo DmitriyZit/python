@@ -1,0 +1,22 @@
+'''
+m = int(input("Введите число:"))
+a = m // 100
+b = m % 100 // 10
+c = m % 10
+res = a + b + c
+print(res)
+
+m = int(input("Введите число журавликов:"))
+p = m // 6
+k = p *4
+print(p, k, p)
+'''
+n = int(input("Введите номер билета:"))
+a = n // 1000
+print(a)
+b = a // 100
+c = a % 100 // 10
+d = a % 10
+leftres = b + d + c
+print(leftres)
+a = n
