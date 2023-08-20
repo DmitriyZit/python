@@ -1,7 +1,9 @@
-print(1)
-a=123
-b=1.23
-c=a+b
-print(a)
-print(b)
-print(c)
+
+print("Введети сколько нужно проехать:")
+n = int(input())
+m = 750
+res = m / n
+print(res, 'день')
+
+
+
