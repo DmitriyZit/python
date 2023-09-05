@@ -31,4 +31,33 @@ for i  in range(len(st)):
     
     #print(st[i], end =' ')
     #print(f'st[i] + _')
+
+Семинар 4. Словари, множества и профилирование
+Задача №27. Общее обсуждение
+Пользователь вводит текст(строка). Словом считается
+последовательность непробельных символов идущих
+подряд, слова разделены одним или большим числом
+пробелов или символами конца строки.Определите,
+сколько различных слов содержится в этом тексте.
+Input: She sells sea shells on the sea shore;The shells
+that she sells are sea shells I'm sure.So if she sells sea
+shells on the sea shore,I'm sure that the shells are sea
+shore shells. Output: 19
+
+tex = 'She sells sea shells on the sea shore. The shellst hat she sells are sea shells m sure. So if she sells sea shells on the sea shore,I that the shells are sea shore shells'.split()
+print(tex)
+text = 'She sells sea shells on the sea shore. The shellst hat she sells are sea shells m sure. So if she sells sea shells on the sea shore,I that the shells are sea shore shells'
+print(tex)
+'''
+t = (len(set(input().split())))
+print(t)
+
+'''
+count = 0
+for i in range(len(text)):
+    print(i)
+    #if i == ' ':
+    #count +=1
+print(count)
+
     
