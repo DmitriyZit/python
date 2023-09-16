@@ -9,7 +9,7 @@ def fib(n):
 
 
 print(fib(n))
-'''
+
 
 n = list(map(int, input().split()))
 def xak(n):
@@ -20,3 +20,14 @@ def xak(n):
             n[i] = minn
     return n
 print(*xak(n))
+'''
+#Простое число или нет
+print('Введите число')
+n = int(input())
+def pros(n):
+    for i in range(2, n // 2 + 1):
+        if n % i == 0:
+            return "NO"
+    return "YES"
+    
+print(pros(n))
