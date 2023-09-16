@@ -20,7 +20,7 @@ def xak(n):
             n[i] = minn
     return n
 print(*xak(n))
-'''
+
 #Простое число или нет
 print('Введите число')
 n = int(input())
@@ -31,3 +31,12 @@ def pros(n):
     return "YES"
     
 print(pros(n))
+'''
+def sort(n):
+    s = input()
+    if n != 1:
+        sort(n-1)
+    print(s, end=' ')
+print('Введите число чисел')
+n = int(input())
+sort(n)
