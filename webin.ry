@@ -1,3 +1,9 @@
 print("Привет")
-a=0
+a = 0
 print(a)
+print("Привет" + str(a))
+pas = 'secret'
+m = input("введи пароль  ")
+if m == pas:
+    print("YES")
+print("NO")
