@@ -7,3 +7,7 @@ m = input("введи пароль  ")
 if m == pas:
     print("YES")
 print("NO")
+while pas != m:
+    print("no")
+    m = input("попробуй еще  ")
+print("YES")
