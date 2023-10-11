@@ -1,0 +1,5 @@
+a = input("Введите число")
+print(a)
+print("введите следущее")
+b = input()
+print(b)
