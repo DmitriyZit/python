@@ -1,0 +1,11 @@
+#Циклы
+i = 0
+while i <= 10:
+    print(i)
+    i +=1
+    
+for j in (45, True, False):
+    print(j)
+    
+for i in range(1, 11, 2):
+    print(i)
