@@ -43,18 +43,18 @@ print(x1, y1)
 (т.е. числа вида 2k), не превосходящие числа N.
 '''
 
-m = (int(input('Введите число ')))
+n = (int(input('Введите число ')))
 k = 0
-n = 2
-for i in range(m):
+m = 2
+for i in range(n):
     if k != 1:
-        n = n ** i
-        if n <= m:
-            print(n)
-            n = 2
+        m = m ** i
+        if m <= n:
+            print(m)
+            m = 2
         else:
             k = 1
     else:
-        i = m
+        i = n
 
 
