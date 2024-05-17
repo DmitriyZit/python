@@ -22,5 +22,22 @@ c = (c + 1) // 2
 res = a + b + c
 
 print(res)
-"""
 
+
+print("введите N")
+i = int(input())
+
+print("введите N1")
+j = int(input())
+
+if i - j == 0:
+    print("не можем")
+else:
+    print(j + i - 1)
+"""
+print("введите ГОД")
+i = int(input())
+if i % 4 == 0 and i % 100 != 0 or i % 100 == 0:
+    print("YES")
+else:
+    print("NO")
