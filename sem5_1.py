@@ -26,7 +26,7 @@ for i in list1:
         print(j)
         set1.add(i[j])
 print(set1)
-'''
+
 list1 = [0, 5, 3, 8, 9]
 count = 0
 
@@ -34,3 +34,14 @@ for i in range(1, len(list1)):
     if list1[i] > list1[i - 1]:
         count +=1
 print(count)
+'''
+
+list_1 = [3, 2, 3, 3, 5]
+k = 3
+
+res = 0
+for i in range(len(list_1)):
+    if list_1[i] == k:
+    
+        res += 1
+print(res)
