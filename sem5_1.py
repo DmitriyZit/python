@@ -14,7 +14,7 @@ print(list_res)
 for i in range(len(list1) - k):
     list_res.append(list1[i])
 print(list_res)
-'''
+
 
 list1 =  [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"},
 {"VI": "S005"}, {"VII": "S005"}, {"V":"S009"}, {"VIII":"S007"}]
@@ -26,3 +26,11 @@ for i in list1:
         print(j)
         set1.add(i[j])
 print(set1)
+'''
+list1 = [0, 5, 3, 8, 9]
+count = 0
+
+for i in range(1, len(list1)):
+    if list1[i] > list1[i - 1]:
+        count +=1
+print(count)
