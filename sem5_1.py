@@ -81,17 +81,30 @@ for i in range(0, len(list_1)):
         
 print(num)
 
-'''
+
 list_1 = [1, 2, 3, 4, 5] 
-k = 5
+k = 4
+
 num = list_1[0]
 #print(num)
 for i in range(len(list_1)): 
-    if abs(list_1[i] - k) < abs(num - k): 
+    if abs(list_1[i] - k) <= abs(num - k): 
         num = list_1[i] 
-        print(num)
-    else:
+print(num)
+    #else:
         
 
-        print(num)
+        #print(num)
+'''
         
+import re 
+k = "ноутбук"
+def Scrabble(text): 
+    return bool(re.search("[а-яА-Я]", text))
+    Rus = { 1:"А, В, Е, И, Н, О, Р, С, Т", 2:"Д, К, Л, М, П, У", 3:"Б, Г, Ё, Ь, Я", 4:"Й, Ы", 5:"Ж, З, Х, Ц, Ч", 8:"Ш, Э, Ю", 10:"Ф, Щ, Ъ"} 
+    Eng = { 1:"A, E, I, O, U, L, N, S, T, R ", 2:"D, G", 3:"B, C, M, P", 4:"F, H, V, W, Y", 5:"K", 8:"J, X"} 
+    text = input("Введите слово: ").upper() 
+    if Scrabble(text): 
+        print(sum([k for i in text for k, v in Rus.items() if i in v])) 
+    else: 
+        print(sum([k for i in text for k, v in Eng.items() if i in v]))
