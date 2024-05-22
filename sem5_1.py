@@ -34,7 +34,7 @@ for i in range(1, len(list1)):
     if list1[i] > list1[i - 1]:
         count +=1
 print(count)
-'''
+
 
 list_1 = [3, 2, 3, 3, 5]
 k = 3
@@ -45,3 +45,30 @@ for i in range(len(list_1)):
     
         res += 1
 print(res)
+
+
+list_1 = [3, 2, 3, 3, 5]
+k = 5
+
+for i in range(len(list_1)):
+    if list_1[i] == k:
+        print(list_1[i])
+
+
+'''
+list_1 = [1, 2, 3, 4, 5,] 
+k = 5
+num = 0
+for i in range(len(list_1)): 
+    if list_1[i] < k: 
+        num = -k 
+        print(num)
+    else: 
+        num = num + 0
+    if list_1[i] >= k and list_1[i] - k <= num - k: 
+        num = list_1[i] 
+        print(num)
+    elif list_1[i] <= k and num - k <= list_1[i] - k: 
+        num = list_1[i] 
+        print(num)
+print(num)
