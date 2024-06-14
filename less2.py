@@ -20,7 +20,7 @@ for i in range(5):
     
 t = (3, 3, 4,)
 print(type(t))
-'''
+
 fib1 = 1
 fib2 = 1
  
@@ -35,3 +35,10 @@ while i < n - 2:
     i = i + 1
  
 print("Значение этого элемента:", fib2)
+
+'''
+list_1 = []
+for i in range(1, 101):
+    if i % 2 == 0:
+        list_1.append(i)
+print(list_1)
