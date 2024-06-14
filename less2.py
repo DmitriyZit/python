@@ -37,8 +37,12 @@ while i < n - 2:
 print("Значение этого элемента:", fib2)
 
 '''
+# Генератор списков
 list_1 = []
 for i in range(1, 101):
     if i % 2 == 0:
         list_1.append(i)
+print(list_1)
+# Или
+list_1 = [i for i in range(1, 50) if i % 2 ==0]
 print(list_1)
