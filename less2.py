@@ -72,7 +72,7 @@ for i in range(1, len(list1)):
     if list1[i] > list1[i - 1]:
         count +=1
 print(count)
-'''
+
 a = int(input('Введите число a \n'))
 b = int(input('Введите числ b \n'))
 
@@ -88,3 +88,21 @@ def f(a, b):
 
 res = f(a, b)
 print(res)
+
+'''
+
+# Найти дружественные числа
+k = int(input('Введите число ' ))
+list1 = list()
+for i in range(k):
+    summ = 0
+    for j in range(1, i//2 +1):
+        if i % j == 0:
+            summ += j
+    list1.append(tuple([i, summ]))
+for i in range(len(list1)):
+    for j in range(i, len(list1)):
+        if i != j and list1[i][0] == list1[j][1] and list1[i][1] == list1[j][0]:
+            print(*list1[i])
+        
+    print("Такого числа нет")
