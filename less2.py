@@ -62,7 +62,7 @@ print(list_res)
 for i in range(len(list1) - k):
     list_res.append(list1[i])
 print(list_res)
-'''
+
 #Колличество раз когда больше
 
 list1 = [0, -1, 5, 2, 3, 6]
@@ -72,3 +72,19 @@ for i in range(1, len(list1)):
     if list1[i] > list1[i - 1]:
         count +=1
 print(count)
+'''
+a = int(input('Введите число a \n'))
+b = int(input('Введите числ b \n'))
+
+def f(a, b):
+    if b == 0:
+        return 1
+    elif b == 1:
+        return a
+    elif b < 0:
+        return 1 / f(a, -b)
+    else:
+        return a * f(a, b-1)
+
+res = f(a, b)
+print(res)
