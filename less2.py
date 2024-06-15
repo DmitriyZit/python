@@ -105,4 +105,4 @@ for i in range(len(list1)):
         if i != j and list1[i][0] == list1[j][1] and list1[i][1] == list1[j][0]:
             print(*list1[i])
         
-    print("Такого числа нет")
+#print("Такого числа нет")
